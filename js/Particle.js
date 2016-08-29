@@ -12,7 +12,7 @@ var Particle = function(canvas) {
 
 Particle.prototype.init = function() {
 
-	this.properties.radius = Math.floor(Math.random() * 5);
+	this.properties.radius = this.getRandom(1, 5);
 	this.properties.colors = ["#1460A8", "#3A8AC1", "#8CB8D8", "#F1F2F4", "#0C0A0D"];
 	this.properties.color = this.properties.colors[this.getRandom(0, 4)];
 	this.properties.x = this.giveDestinationX();
@@ -20,7 +20,7 @@ Particle.prototype.init = function() {
 	this.updatePosition(); // Give tween when particle created
 
 	// Draw the Particle when instanced
-	this.draw();
+	this.draw();   
 
 }
 
