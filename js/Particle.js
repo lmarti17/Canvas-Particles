@@ -20,7 +20,7 @@ Particle.prototype.init = function() {
 	this.updatePosition(); // Give tween when particle created
 
 	// Draw the Particle when instanced
-	this.draw();   
+	this.draw();
 
 }
 
@@ -37,7 +37,7 @@ Particle.prototype.draw = function() {
 Particle.prototype.updatePosition = function() {
 
 	var self = this;
-	this.properties.tween = TweenLite.to(this.properties, this.getRandom(5, 10), {
+	this.properties.tween = TweenLite.to(this.properties, this.getRandom(10, 15), {
 		bezier: {
 			curviness: 5,
 			values: [{

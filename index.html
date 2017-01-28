@@ -3,18 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Canvas Particle Experiment</title>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/reset.css">
+	<style>body{overflow:hidden}</style>
 </head>
 
 <body>
 	<canvas id="canvas"></canvas>
 
-	<script src="vendor/jquery-2.1.4.min.js"></script>
 	<script src="vendor/TweenLite.min.js"></script>
 	<script src="vendor/BezierPlugin.min.js"></script>
 	<script src="js/Particle.js"></script>
 	<script src="js/Canvas.js"></script>
-	<script src="js/App.js"></script>
+	<script>
+        let App = new Canvas();
+    </script>
 </body>
 </html>

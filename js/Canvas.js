@@ -13,8 +13,8 @@ Canvas.prototype.init = function() {
 
 	this.canvas.Canvas = document.getElementById('canvas');
 	this.canvas.ctx = this.canvas.Canvas.getContext('2d');
-	this.canvas.Canvas.width = $(window).width();
-	this.canvas.Canvas.height = $(window).height();
+	this.canvas.Canvas.width = document.documentElement.clientWidth;
+	this.canvas.Canvas.height = document.documentElement.clientHeight;
 	this.canvas.particleArray = this.generateArray(200);
 
 	this.loopArray();
